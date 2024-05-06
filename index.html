@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetic Retinopathy Detection</title>
+    <link rel="stylesheet" href="static/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="static/DR_logo.jpeg" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="http://localhost:8501/">Detect</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Project - D</h1>
+                <p>Our cutting-edge deep learning model can accurately detect and classify diabetic retinopathy from retinal images, helping you take control of your eye health.</p>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <img src="static/ai.jpg" alt="Feature 1">
+                <h3>Advanced AI Technology</h3>
+                <p>Our model utilizes the latest advancements in artificial intelligence and deep learning to provide highly accurate results.</p>
+            </div>
+            <div class="feature">
+                <img src="static/early.jpg" alt="Feature 2">
+                <h3>Early Detection</h3>
+                <p>Early detection of diabetic retinopathy is crucial for timely treatment and preventing vision loss.</p>
+            </div>
+            <div class="feature">
+                <img src="static/edoctor.jpg" alt="Feature 3">
+                <h3>Convenient and Accessible</h3>
+                <p>Our web-based solution makes it easy to detect diabetic retinopathy from the comfort of your home or clinic.</p>
+            </div>
+        </section>
+
+        <div class="cta-button">
+            <a href="http://localhost:8501/" class="btn">Detect Now</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Diabetic Retinopathy Detection</p>
+    </footer>
+</body>
+</html>
